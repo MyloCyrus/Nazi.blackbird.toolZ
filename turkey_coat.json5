@@ -1,0 +1,31 @@
+```jsx
+import React from 'react';
+
+class GitignoreFile extends React.Component {
+  render() {
+    const gitignoreContent = `
+      # Ignore node_modules directory
+      /node_modules
+
+      # Ignore build directory
+      /build
+
+      # Ignore .env file
+      .env
+    `;
+
+    return (
+      <div>
+        <h2>Gitignore File</h2>
+        <pre>{gitignoreContent}</pre>
+      </div>
+    );
+  }
+}
+
+export default GitignoreFile;
+```
+
+In this code snippet, we define a React component called `GitignoreFile` that renders a heading (`<h2>Gitignore File</h2>`) and the content of a gitignore file (`<pre>{gitignoreContent}</pre>`). The gitignore content is stored in a variable `gitignoreContent` as a multi-line string.
+
+To use this component in a React application, you can import it and include it in the desired location of your application's component hierarchy. In the example provided, the `GitignoreFile` component is included within the `App` component.
